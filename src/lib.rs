@@ -53,7 +53,7 @@ macro_rules! impl_notifier_app_data_wrapper {
         }
 
         impl $crate::NotifierAppDataWrapper for $name {
-            fn get_notifier_app_data(&self) -> &actix_notifier::NotifierAppData {
+            fn get_notifier_app_data(&self) -> &$crate::NotifierAppData {
                 &self.0
             }
         }
